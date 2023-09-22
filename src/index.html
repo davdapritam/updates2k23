@@ -1,13 +1,130 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Updates2k23</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
+<script>
+  const imgs = document.getElementsByClassName("sponserImg");
+  const prev = document.querySelector(".prev");
+  const next = document.querySelector(".next");
+
+  let index = 0;
+
+
+  if (imgs) {
+
+    console.log("images", imgs)
+  }
+
+  function layout() {
+    const xOffsetStep = 300;
+    const count = imgs.length;
+    const scaleStep = 0.6; //default value is 0.6
+    const opacityStep = 0.5;
+
+    for (let i = 0; i < imgs.length; i++) {
+      img = imgs[i];
+      const sign = Math.sign(i - index);
+
+      let xOffset = (i - index) * xOffsetStep;
+      if (i !== index) {
+        xOffset = xOffset + 80 * sign;
+      }
+      const scale = scaleStep ** Math.abs(i - index);
+      const rotateY = i === index ? 0 : 30 * -sign;
+      img.style.transform = `perspective(800px) translateX(${xOffset}px) scale(${scale}) rotateY(${rotateY}deg)`;
+      // img.style.transform = `perspective(400px)  translateX(${xOffset}px)   scale(${scale}) `;
+
+      let opacity = opacityStep ** Math.abs(i - index);
+      if (Math.abs(i - index) > 2) {
+        opacity = 0;
+      }
+      img.style.opacity = opacity;
+
+      img.style.zIndex = count - Math.abs(index - i);
+    }
+  }
+  // setInterval(layout(), 1000);
+
+  if (next) {
+    next.addEventListener("click", () => {
+      index++;
+      if (index > imgs.length - 1) {
+        index = imgs.length - 1;
+      }
+      layout();
+    });
+  }
+
+  if (prev) {
+    prev.addEventListener("click", () => {
+      index--;
+      if (index < 0) {
+        index = 0;
+      }
+      layout();
+    });
+  }
+
+  const autoSlideInterval = 3000;
+  let autoSlideTimer;
+
+  function startAutoSlide() {
+    autoSlideTimer = setInterval(() => {
+      index++;
+      if (index > imgs.length - 1) {
+        index = 0;
+      }
+      layout();
+    }, autoSlideInterval);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideTimer);
+  }
+
+  startAutoSlide();
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
 </html>
