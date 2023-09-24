@@ -86,30 +86,29 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Vishwa Desai",
-          img: '',
+          img: '../../assets/EventCoordinators/WebWave/vishwa.jpg',
           phone: "9664646587"
         },
         {
           name: "Vaibhav Biyawala Deven",
-          img: '',
+          img: '../../assets/EventCoordinators/WebWave/vaibhav.jpg',
           phone: "7984343590"
         },
         {
           name: "Dalal Vansh Bhadreshbhai",
-          img: '',
+          img: '../../assets/EventCoordinators/WebWave/vansh.jpg',
           phone: "7874755265"
         }
       ],
-      // Nikhar Savaliya(9664869002) Darshan Ukani(9725464010)
       volunteers: [
         {
           name: "Nikhar Savaliya",
-          img: '',
+          img: '../../assets/EventCoordinators/WebWave/nikhar.jpg',
           phone: "9664869002"
         },
         {
           name: "Darshan Ukani",
-          img: '',
+          img: '../../assets/EventCoordinators/WebWave/darshan.jpg',
           phone: "9725464010"
         }
       ],
@@ -197,24 +196,24 @@ export class RulesComponent implements OnInit {
         },
         {
           name: "Kirtan Khare",
-          img: '',
+          img: '../../assets/EventCoordinators/BrainX/kirtan.jpg',
           phone: "9537281166"
         },
         {
           name: "Dhruvil Gelani",
-          img: '',
+          img: '../../assets/EventCoordinators/BrainX/dhruvil_ghelani.jpg',
           phone: "9601500975"
         }
       ],
       volunteers: [
         {
           name: "Radha Gohil",
-          img: '',
+          img: '../../assets/EventCoordinators/BrainX/radha_gohil.jpg',
           phone: "9016920249"
         },
         {
           name: "Nirav Paneliya",
-          img: '',
+          img: '../../assets/EventCoordinators/BrainX/nirav_paneliya.jpg',
           phone: "6352389172"
         }
       ],
@@ -242,17 +241,17 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Aryan Mehta",
-          img: '',
+          img: '../../assets/EventCoordinators/Avishkar/aryan.jpg',
           phone: "9081170842"
         },
         {
           name: "Ria Kangariwala",
-          img: '',
+          img: '../../assets/EventCoordinators/Avishkar/ria.jpg',
           phone: "7433046828"
         },
         {
           name: "Fenil Chauhan",
-          img: '',
+          img: '../../assets/EventCoordinators/Avishkar/fenil_chauhan.jpg',
           phone: "9638402511"
         }
       ],
@@ -267,7 +266,7 @@ export class RulesComponent implements OnInit {
     {
       id: 4,
       eventImg: "../../assets/Fonts/enigma.png",
-      eventBackImg: '../../assets/bg/enigma.jpeg',
+      eventBackImg: '../../assets/bg/enigma.jpg',
       event_tagLine: "Unlock the Mysteries",
       eventDescription: {
         no_of_rounds: 2,
@@ -313,24 +312,24 @@ export class RulesComponent implements OnInit {
         },
         {
           name: "Rushi Patel",
-          img: '',
+          img: '../../assets/EventCoordinators/Enigma/rushi.jpg',
           phone: "7359760025"
         },
         {
           name: "Jenil Vaghasiya",
-          img: '',
+          img: '../../assets/EventCoordinators/Enigma/jenil.jpg',
           phone: "6353954707"
         }
       ],
       volunteers: [
         {
           name: " Om Vasoya",
-          img: '',
+          img: '../../assets/EventCoordinators/Enigma/omVasoya.png',
           phone: "8320169729"
         },
         {
           name: "Jay Kanavia",
-          img: '',
+          img: '../../assets/EventCoordinators/Enigma/jay.png',
           phone: "9723461100"
         }
       ],
@@ -339,7 +338,7 @@ export class RulesComponent implements OnInit {
     {
       id: 5,
       eventImg: "../../assets/Fonts/twofold.png",
-      eventBackImg: '../../assets/bg/twofold.jpeg',
+      eventBackImg: '../../assets/bg/twofold.jpg',
       event_tagLine: "Unfold the secret",
       eventDescription: {
         no_of_rounds: 2,
@@ -397,29 +396,29 @@ export class RulesComponent implements OnInit {
         },
         {
           name: "Kirtan Vaghasiya",
-          img: '',
+          img: '../../assets/EventCoordinators/TwoFold/kirtan_vaghasiya.jpg',
           phone: "8799483232"
         },
         {
           name: "Aditya Bhakhar",
-          img: '',
+          img: '../../assets/EventCoordinators/TwoFold/aditya_bhakhar.jpg',
           phone: "9925347434"
         }
       ],
       volunteers: [
         {
           name: "Disha Gopani",
-          img: '',
+          img: '../../assets/EventCoordinators/TwoFold/disha_gopani.jpg',
           phone: "9104200604"
         },
         {
           name: "Swayam Parekh",
-          img: '',
+          img: '../../assets/EventCoordinators/TwoFold/swayam.jpg',
           phone: "8347753121"
         },
         {
           name: "Manthan Lad",
-          img: '',
+          img: '../../assets/EventCoordinators/TwoFold/manthan_lad.jpg',
           phone: "9974548747"
         }
       ],
@@ -437,7 +436,7 @@ export class RulesComponent implements OnInit {
     {
       id: 6,
       eventImg: "../../assets/Fonts/whomi.png",
-      eventBackImg: '../../assets/bg/brainx.png',
+      eventBackImg: '../../assets/bg/whomi.jpg',
       event_tagLine: "Catch Clue And Find Person",
       eventDescription: {
         no_of_rounds: 1,
@@ -486,17 +485,17 @@ export class RulesComponent implements OnInit {
       volunteers: [
         {
           name: "Aum Patel",
-          img: '',
+          img: '../../assets/EventCoordinators/whomi/aum.jpg',
           phone: "9427426912"
         },
         {
           name: "Parth Lathiya",
-          img: '',
+          img: '../../assets/EventCoordinators/whomi/parth.jpg',
           phone: "9537150942"
         },
         {
           name: "Hetvi Vaghasiya",
-          img: '',
+          img: '../../assets/EventCoordinators/whomi/hetvi.jpg',
           phone: "7990441511"
         }
       ],
@@ -558,17 +557,17 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Drashti Bhingradiya",
-          img: '',
+          img: '../../assets/EventCoordinators/Cineverse/drashti.jpg',
           phone: "7435007595"
         },
         {
           name: "Drashti Malaviya",
-          img: '',
+          img: '../../assets/EventCoordinators/Cineverse/drashti_malviya.jpg',
           phone: "8200893177"
         },
         {
           name: "Jenish Vaghasiya",
-          img: '',
+          img: '../../assets/EventCoordinators/Cineverse/jenish.jpg',
           phone: "9724992568"
         },
         {
@@ -580,12 +579,12 @@ export class RulesComponent implements OnInit {
       volunteers: [
         {
           name: "Divyam Desai",
-          img: '',
+          img: '../../assets/EventCoordinators/Cineverse/divyam_desai.jpg',
           phone: "9909752166"
         },
         {
           name: "Yug Golakiya",
-          img: '',
+          img: '../../assets/EventCoordinators/Cineverse/yug_golakiya.jpg',
           phone: "9510705625"
         }
       ],
@@ -658,12 +657,12 @@ export class RulesComponent implements OnInit {
         },
         {
           name: "Neeraja Joshi",
-          img: '',
+          img: '../../assets/EventCoordinators/SkillSynth/neerja_joshi.jpg',
           phone: "6352849431"
         },
         {
           name: "Deep Desai",
-          img: '',
+          img: '../../assets/EventCoordinators/SkillSynth/deep_desai.jpg',
           phone: "9173440015"
         }
       ],
@@ -767,7 +766,7 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Kaushal Gadhiya",
-          img: '',
+          img: '../../assets/EventCoordinators/StockX/kaushal_gadhiya.jpg',
           phone: "8866982198"
         },
         {
@@ -784,12 +783,12 @@ export class RulesComponent implements OnInit {
       volunteers: [
         {
           name: "Aum Patel",
-          img: '',
+          img: '../../assets/EventCoordinators/StockX/aum_patel.jpg',
           phone: "9099942139"
         },
         {
           name: "Hetvi Patel",
-          img: '',
+          img: '../../assets/EventCoordinators/StockX/hetvi_patel.jpg',
           phone: "9426670831"
         },
         {
@@ -862,12 +861,12 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Vishwaa Shah",
-          img: '',
+          img: '../../assets/EventCoordinators/Abhivyakti/vishwaa.jpg',
           phone: "6351427741"
         },
         {
           name: "Varoon Soneji",
-          img: '',
+          img: '../../assets/EventCoordinators/Abhivyakti/varoon_soneji.jpg',
           phone: "8866147270"
         }
       ],
@@ -924,17 +923,17 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Zenil Dhameliya",
-          img: '',
+          img: '../../assets/EventCoordinators/DataTrace/zenil_dhameliya.jpg',
           phone: "8154877466"
         },
         {
           name: "Tanvi Dhola",
-          img: '',
+          img: '../../assets/EventCoordinators/DataTrace/tanvi_dhola.jpg',
           phone: "7016805020"
         },
         {
           name: "Priyanshi Dobariya",
-          img: '',
+          img: '../../assets/EventCoordinators/DataTrace/priyanshi_dobariya.jpg',
           phone: "7984790671"
         }
       ],
@@ -946,7 +945,7 @@ export class RulesComponent implements OnInit {
         },
         {
           name: "Mitesh Dobariya",
-          img: '',
+          img: '../../assets/EventCoordinators/DataTrace/mitesh_dobariya.jpg',
           phone: "9099727340"
         },
       ],
@@ -1024,19 +1023,19 @@ export class RulesComponent implements OnInit {
         },
         {
           name: "Shriya Lukhi",
-          img: '',
+          img: '../../assets/EventCoordinators/HackFix/lukhi.jpg',
           phone: "9825995867"
         }
       ],
       volunteers: [
         {
           name: "Neel Gadhiya",
-          img: '',
+          img: '../../assets/EventCoordinators/HackFix/neel_gadhiya.jpg',
           phone: "9925755966"
         },
         {
           name: "Dev Vaghani",
-          img: '',
+          img: '../../assets/EventCoordinators/HackFix/dev_vaghani.jpg',
           phone: "9313960234"
         },
       ],
@@ -1113,12 +1112,12 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Rushal Vaghani",
-          img: '',
+          img: '../../assets/EventCoordinators/Codify/rushal.jpg',
           phone: "7874242280"
         },
         {
           name: "Tanmay Patel",
-          img: '',
+          img: '../../assets/EventCoordinators/Codify/tanmay.jpg',
           phone: "9537287756"
         },
         {
@@ -1130,12 +1129,12 @@ export class RulesComponent implements OnInit {
       volunteers: [
         {
           name: "Dev Italiya",
-          img: '',
+          img: '../../assets/EventCoordinators/Codify/dev_italiya.jpg',
           phone: ""
         },
         {
           name: "Archi Gazdar",
-          img: '',
+          img: '../../assets/EventCoordinators/Codify/archi_gazdar.jpg',
           phone: ""
         },
       ],
