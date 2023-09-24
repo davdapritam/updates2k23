@@ -867,7 +867,7 @@ export class RulesComponent implements OnInit {
           var backImg = document.getElementById('giveBackImg');
           if (backImg) {
             backImg.style.background = `url(${this.eventBackImg})`;
-            backImg.style.backgroundSize = 'contain';
+            backImg.style.backgroundSize = 'cover';
           }
 
           this.eventDescription = result[0].eventDescription
