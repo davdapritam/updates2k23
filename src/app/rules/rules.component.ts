@@ -863,6 +863,13 @@ export class RulesComponent implements OnInit {
         if (result) {
           this.eventLogo = result[0].eventImg
           this.eventBackImg = result[0].eventBackImg
+
+          var backImg = document.getElementById('giveBackImg');
+          if (backImg) {
+            backImg.style.background = `url(${this.eventBackImg})`;
+            backImg.style.backgroundSize = 'contain';
+          }
+
           this.eventDescription = result[0].eventDescription
           this.eventRounds = result[0].eventRound
           this.studentCoordinators = result[0].coordinators
