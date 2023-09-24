@@ -22,6 +22,109 @@ export class RulesComponent implements OnInit {
 
   rulesAndDescriptionArray: any[] = [
     {
+      id: 1,
+      eventImg: "../../assets/Fonts/webwave.png",
+      eventBackImg: '../../assets/bg/webwave.png',
+      event_tagLine: "The HTML CSS Fusion",
+      eventDescription: {
+        no_of_rounds: 2,
+        decription: "Duration: 120 minutes (briefing, design time, and prep for next task)."
+      },
+      eventRound: [
+        {
+          round_name: "Revamp the Preformatted",
+          roundDescription: [
+            {
+              description: 'Participants will receive a preformatted web page as a starting point.'
+            },
+            {
+              description: 'Design elements, fonts, and color palettes are provided to align with the futuristic theme.'
+            },
+            {
+              description: 'The task is to create the provided template to create a visually captivating web page.'
+            },
+            {
+              description: 'Participants can use HTML and CSS to improve visuals and user experience.'
+            },
+            {
+              description: 'Participants must work within the given 40-minute time frame.'
+            },
+            {
+              description: 'Coordinators and volunteers are available for assistance if needed.'
+            },
+          ],
+          approx_time: '40 Minutes'
+        },
+        {
+          round_name: "Elevate with Conditions",
+          roundDescription: [
+            {
+              description: 'Participants will receive a distinct design challenge on-site, closely related to the futuristic theme.'
+            },
+            {
+              description: 'The challenge requires participants to create a web page based on specific conditions.'
+            },
+            {
+              description: 'Participants can use HTML and CSS to meet the challenge\'s requirements.'
+            },
+            {
+              description: 'Creativity within constraints is encouraged.'
+            },
+            {
+              description: 'The challenge must be completed within the given 50-minute time frame.'
+            },
+            {
+              description: 'Judges will evaluate based on innovation, theme alignment, technical proficiency, user experience, and functionality.'
+            },
+            {
+              description: 'Further rules for Round 2 will be announced on the spot.'
+            },
+          ],
+          approx_time: '50 Minutes'
+        }
+      ],
+      coordinators: [
+        {
+          name: "Vishwa Desai",
+          img: '',
+          phone: "9664646587"
+        },
+        {
+          name: "Vaibhav Biyawala Deven",
+          img: '',
+          phone: "7984343590"
+        },
+        {
+          name: "Dalal Vansh Bhadreshbhai",
+          img: '',
+          phone: "7874755265"
+        }
+      ],
+      // Nikhar Savaliya(9664869002) Darshan Ukani(9725464010)
+      volunteers: [
+        {
+          name: "Nikhar Savaliya",
+          img: '',
+          phone: "9664869002"
+        },
+        {
+          name: "Darshan Ukani",
+          img: '',
+          phone: "9725464010"
+        }
+      ],
+      faculty_coordinators: [
+        {
+          img: '',
+          name: "Prof.Urmi Desai"
+        },
+        {
+          img: '',
+          name: "Prof.Vasundhara Uchhula"
+        }
+      ],
+    },
+    {
       id: 2,
       eventImg: "../../assets/Fonts/brainx.png",
       eventBackImg: '../../assets/bg/brainx.png',
@@ -164,7 +267,7 @@ export class RulesComponent implements OnInit {
     {
       id: 4,
       eventImg: "../../assets/Fonts/enigma.png",
-      eventBackImg: '../../assets/bg/brainx.png',
+      eventBackImg: '../../assets/bg/enigma.jpeg',
       event_tagLine: "Unlock the Mysteries",
       eventDescription: {
         no_of_rounds: 2,
@@ -232,6 +335,104 @@ export class RulesComponent implements OnInit {
         }
       ],
       faculty_coordinators: [],
+    },
+    {
+      id: 5,
+      eventImg: "../../assets/Fonts/twofold.png",
+      eventBackImg: '../../assets/bg/twofold.jpeg',
+      event_tagLine: "Unfold the secret",
+      eventDescription: {
+        no_of_rounds: 2,
+        decription: "All the rounds of this event will be conducted in Team"
+      },
+      eventRound: [
+        {
+          round_name: "",
+          roundDescription: [
+            {
+              description: 'Questions will be asked about Vocabulary and Aptitude.'
+            },
+            {
+              description: 'Quiz will be based on critical thinking.'
+            },
+            {
+              description: 'The team who solves the problem statement correctly qualifies as the winner.'
+            },
+            {
+              description: 'Evaluation will be done on the basis of ranking.'
+            },
+            {
+              description: 'In case of tie time factor will be considered.'
+            },
+            {
+              description: 'Usage of Mobile Phone or Any other device will result in immediate disqualification.'
+            },
+          ],
+          approx_time: '60 Minutes'
+        },
+        {
+          round_name: "",
+          roundDescription: [
+            {
+              description: 'Problems will be given in moderate and complex level with all the necessary cipher techniques.'
+            },
+            {
+              description: 'The team who solves the problem statement correctly qualifies as the winner.'
+            },
+            {
+              description: 'In case of tie time factor will be considered.'
+            },
+            {
+              description: 'Usage of Mobile Phone or Any other device will result in immediate disqualification.'
+            },
+          ],
+          approx_time: '45 Minutes'
+        }
+      ],
+      coordinators: [
+        {
+          name: "Kushal Jasani",
+          img: '',
+          phone: "9724998559"
+        },
+        {
+          name: "Kirtan Vaghasiya",
+          img: '',
+          phone: "8799483232"
+        },
+        {
+          name: "Aditya Bhakhar",
+          img: '',
+          phone: "9925347434"
+        }
+      ],
+      volunteers: [
+        {
+          name: "Disha Gopani",
+          img: '',
+          phone: "9104200604"
+        },
+        {
+          name: "Swayam Parekh",
+          img: '',
+          phone: "8347753121"
+        },
+        {
+          name: "Manthan Lad",
+          img: '',
+          phone: "9974548747"
+        }
+      ],
+      faculty_coordinators: [
+        {
+          name: 'Prof. Bintu Kadhiwala',
+          img: ''
+        },
+        {
+          name: 'Prof. Vandana Joshi',
+          img: ''
+        }
+      ],
     },
     {
       id: 6,
@@ -850,34 +1051,137 @@ export class RulesComponent implements OnInit {
         }
       ]
     },
+    {
+      id: 13,
+      eventImg: "../../assets/Fonts/codify.png",
+      eventBackImg: '../../assets/bg/hackfix.png',
+      event_tagLine: "Codify: Where Creativity Meets Code",
+      eventDescription: {
+        no_of_rounds: 3,
+        decription: "All the rounds of this event will be conducted in Team (Member of 2)."
+      },
+      eventRound: [
+        {
+          round_name: "Quizify",
+          roundDescription: [
+            {
+              description: 'Quiz will be conducted online through google form.'
+            },
+            {
+              description: '15 Questions will be asked about Basic Programming and Aptitude.'
+            },
+            {
+              description: 'The quiz will be based on C programming language.'
+            },
+            {
+              description: 'Evaluation will be done based on ranking.'
+            },
+            {
+              description: 'In the case of tie, the time factor will be considered.'
+            },
+          ],
+          approx_time: '45 Minutes'
+        },
+        {
+          round_name: "Guess the problem statement.",
+          roundDescription: [
+            {
+              description: "The set of codes will be displayed on the screen (one code at a time)."
+            },
+            {
+              description: 'The team who guessed the problem statement qualified for the final round.'
+            },
+            {
+              description: 'Usage of Mobile Phone or Any other device will result into immediate disqualification.'
+            }
+          ],
+          approx_time: '45 Minutes'
+        },
+        {
+          round_name: "Fastest Finger First",
+          roundDescription: [
+            {
+              description: "The students have to complete the code by swapping their position with their team members."
+            },
+            {
+              description: 'The first three teams to solve the code will be declared as winners'
+            }
+          ],
+          approx_time: '45 Minutes'
+        }
+      ],
+      coordinators: [
+        {
+          name: "Rushal Vaghani",
+          img: '',
+          phone: "7874242280"
+        },
+        {
+          name: "Tanmay Patel",
+          img: '',
+          phone: "9537287756"
+        },
+        {
+          name: "Rahul Mehta",
+          img: '',
+          phone: "8866658521"
+        }
+      ],
+      volunteers: [
+        {
+          name: "Dev Italiya",
+          img: '',
+          phone: ""
+        },
+        {
+          name: "Archi Gazdar",
+          img: '',
+          phone: ""
+        },
+      ],
+      faculty_coordinators: [
+        {
+          name: 'Prof. Dhatri Pandya',
+          img: ''
+        },
+        {
+          name: 'Prof. Pranav Rathod',
+          img: ''
+        }
+      ]
+    },
   ]
 
   ngOnInit(): void {
+    this.scrollToTop();
     this.route.params.subscribe((params) => {
       this.eventId = params['id']
       if (this.eventId == 0) {
         this.router.navigate(['updates2k23'])
       } else {
         const result = this.rulesAndDescriptionArray.filter(event => event.id === Number(this.eventId));
-        console.log("result", result)
         if (result) {
           this.eventLogo = result[0].eventImg
           this.eventBackImg = result[0].eventBackImg
-
           var backImg = document.getElementById('giveBackImg');
           if (backImg) {
             backImg.style.background = `url(${this.eventBackImg})`;
             backImg.style.backgroundSize = 'cover';
           }
-
           this.eventDescription = result[0].eventDescription
           this.eventRounds = result[0].eventRound
           this.studentCoordinators = result[0].coordinators
           this.facultyCoordinators = result[0].faculty_coordinators
           this.volunteers = result[0].volunteers
-          console.log(this.facultyCoordinators);
         }
       }
+    })
+  }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
     })
   }
 
