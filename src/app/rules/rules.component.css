@@ -184,6 +184,10 @@ ul li {
         font-size: 17px;
     }
 
+    ul {
+        padding-left: 13px;
+    }
+
     .grid_left {
         width: 67%;
         padding-left: 25px;
@@ -266,6 +270,15 @@ ul li {
         height: 70px;
     }
 
+    .desc_heading,
+    .rulesHeading {
+        font-size: 22px;
+    }
+
+    .rulesHeading2 {
+        font-size: 17px;
+    }
+
     .grid_left {
         width: 100%;
         padding-left: 20px;
@@ -287,6 +300,6 @@ ul li {
     .description .paras,
     .card .details .name,
     .card .details .number {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
