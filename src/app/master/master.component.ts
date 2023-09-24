@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-master',
@@ -12,6 +13,22 @@ export class MasterComponent implements OnInit {
 
 
   mainCoordinator = '../../assets/MainCoordinators/keyur.jpeg'
+
+  posters: any[] = [
+    { id: 1, img: '../../assets/Events/1.jpg' },
+    { id: 2, img: '../../assets/Events/2.jpg' },
+    { id: 3, img: '../../assets/Events/3.jpg' },
+    { id: 4, img: '../../assets/Events/4.jpg' },
+    { id: 5, img: '../../assets/Events/5.jpg' },
+    { id: 6, img: '../../assets/Events/6.jpg' },
+    { id: 7, img: '../../assets/Events/7.jpg' },
+    { id: 8, img: '../../assets/Events/8.jpg' },
+    { id: 9, img: '../../assets/Events/9.jpg' },
+    { id: 10, img: '../../assets/Events/10.jpg' },
+    { id: 11, img: '../../assets/Events/11.jpg' },
+    { id: 12, img: '../../assets/Events/12.jpg' },
+    { id: 13, img: '../../assets/Events/13.jpg' },
+  ]
 
   mainCoordinators = [
     { id: 1, img: '../../assets/MainCoordinators/keyur.jpeg', name: 'Keyur Kakadiya' },
@@ -28,7 +45,7 @@ export class MasterComponent implements OnInit {
   ];
 
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
@@ -66,6 +83,10 @@ export class MasterComponent implements OnInit {
 
   goToLink(url: string) {
     window.open(url, "_blank")
+  }
+
+  navigateTo(id: number) {
+    this.router.navigate(['updates2k23/rules', id])
   }
 
 }

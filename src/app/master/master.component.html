@@ -6,15 +6,15 @@
     </div>
     <nav>
         <div class="Logo">
-            <img src="../../assets/Final Updates Logo@4x.png" alt="">
+            <img src="../../assets/updates.png" alt="">
         </div>
         <div class="navItems">
             <div class="navbar">
                 <a href="#">Home</a>
                 <a href="#eventSection">Events</a>
                 <a href="#timeTable">Schedule</a>
-                <a href="#coOrdinators">Co-ordinators</a>
-                <a href="#developersSection">Developers</a>
+                <!-- <a href="#coOrdinators">Co-ordinators</a> -->
+                <!-- <a href="#developersSection">Developers</a> -->
             </div>
         </div>
         <div class="toggleDisplay">
@@ -42,15 +42,8 @@
         </video>
     </div>
 
-    <!-- 
-    <div class="main-content">
-        <div class="backImg">
-            <img src="../../assets/mainPoster.jpg" alt="">
-        </div>
-    </div> -->
-
-
-    <section class="slider-container titleMrg">
+    <!-- SPONSOR SECTION -->
+    <!-- <section class="slider-container titleMrg">
         <div class="mainTitle">
             <h1 class="title">Sponsor</h1>
         </div>
@@ -80,15 +73,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- <div class="marque" style="width: 100%; display: flex; justify-content: center; align-items: center;">
-        <div class="insideMarque" style="width: 80%;">
-            <marquee behavior="" style="font-size: 30px; color: red; font-weight: 700;" direction="left">“Registration
-                for
-                each of these events is free, and each winner will be given cash prizes”</marquee>
-        </div>
-    </div> -->
+    </section> -->
 
     <div class="event-container titleMrg" id="eventSection">
         <div class="mainTitle">
@@ -96,66 +81,12 @@
         </div>
         <div class="event-card-container">
 
-            <div class="event-card" id="eventCard">
+            <div class="event-card" *ngFor="let event of posters" id="eventCard">
                 <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
+                    <img [src]="event.img" (click)="navigateTo(event.id)" id="codeOne" alt="">
                 </div>
             </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
-            <div class="event-card" id="eventCard">
-                <div class="event-img">
-                    <img src="../../assets/Events/poster.png" onclick="CodeClick()" id="codeOne" alt="">
-                </div>
-            </div>
+
             <!-- <div class="rules_container editZ-index-0" id="codeTheOne-display">
                 <div class="rules_div" id="rulesContainer">
                     <i class="fa fa-times-circle" onclick="CloseCodeClick()"></i>
@@ -174,7 +105,7 @@
                 <h1 class="title">Event Schedule</h1>
             </div>
             <div class="timeTable">
-                <img src="../../assets/eventSchedule.png" alt="">
+                <img src="../../assets/eventSchedule.jpg" alt="">
             </div>
         </div>
     </div>
@@ -203,7 +134,7 @@
             </div>
         </div> -->
 
-    <div class="developersContainer titleMrg">
+    <!-- <div class="developersContainer titleMrg">
         <div class="mainTitle">
             <h1 class="title facTitle">FACULTY COORDINATORS</h1>
         </div>
@@ -227,9 +158,9 @@
                 <p class="devName">Ms. Yuti Desai</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="developersContainer titleMrg" id="developersSection">
+    <!-- <div class="developersContainer titleMrg" id="developersSection">
         <div class="mainTitle">
             <h1 class="title">Web Developers</h1>
         </div>
@@ -247,11 +178,75 @@
                 <p class="devName">Jash Patel</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    <!-- <section class="team">
+        <h2 class="section-heading">Our Team</h2>
+        <div class="container">
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="" /><span class="name">Kalyan</span>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1530577197743-7adf14294584?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80"
+                    alt="" /><span class="name">Suchitra Tiwari</span>
+            </div>
 
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1598641795816-a84ac9eac40c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80"
+                    alt="" /><span class="name">Sajid Ghani</span>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="" /><span class="name">Dhriti</span>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1618018352910-72bdafdc82a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="" /><span class="name">Milind</span>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=801&q=80"
+                    alt="" /><span class="name">Srikant Tiwari</span>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
+                    alt="" /><span class="name">Major Sameer</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="" /><span class="name">Kalyan</span>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1530577197743-7adf14294584?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80"
+                    alt="" /><span class="name">Suchitra Tiwari</span>
+            </div>
 
-    <div class="spContainer titleMrg">
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1598641795816-a84ac9eac40c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80"
+                    alt="" /><span class="name">Sajid Ghani</span>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="" /><span class="name">Dhriti</span>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1618018352910-72bdafdc82a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="" /><span class="name">Milind</span>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=801&q=80"
+                    alt="" /><span class="name">Srikant Tiwari</span>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
+                    alt="" /><span class="name">Major Sameer</span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <div class="spContainer titleMrg">
         <div class="mainTitle">
             <h1 class="title">Special Thanks To</h1>
         </div>
@@ -310,7 +305,7 @@
 
         </div>
 
-    </div>
+    </div> -->
 
 
     <footer>

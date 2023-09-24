@@ -1,0 +1,70 @@
+<div class="container1">
+    <img class="backImg" [src]="eventBackImg" alt="">
+    <div class="rulesheader">
+        <img [src]="eventLogo" />
+    </div>
+    <div class="grid">
+        <div class="grid_left">
+            <div class="description">
+                <h1 class="desc_heading">Description</h1>
+                <div class="paras mt-2" id="event_decription">{{ eventDescription.decription }}</div>
+                <div class="paras mt-2" id="event_decription">Number Of Rounds : {{ eventDescription.no_of_rounds }}
+                </div>
+            </div>
+            <div class="rules" *ngFor="let round of eventRounds; let i = index">
+                <h1 class="rulesHeading">Round {{ i+1 }} : {{ round.round_name }}</h1>
+                <h1 class="rulesHeading2">Rules</h1>
+                <div class="paras">
+                    <ul>
+                        <li *ngFor="let rule of round.roundDescription">
+                            {{ rule.description }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid_right">
+            <div class="student-coordinator" *ngIf="studentCoordinators.length > 0">
+                <h1 class="desc_heading">Student Coordinator</h1>
+                <div class="cards">
+                    <div class="card" *ngFor="let co of studentCoordinators">
+                        <div class="img" *ngIf="co.img">
+                            <img [src]="co.img" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">{{ co.name }}</div>
+                            <div class="number">{{ co.phone }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-coordinator" *ngIf="volunteers.length > 0">
+                <h1 class="desc_heading">Volunteers</h1>
+                <div class="cards">
+                    <div class="card" *ngFor="let vo of volunteers">
+                        <div class="img" *ngIf="vo.img">
+                            <img [src]="vo.img" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">{{ vo.name }}</div>
+                            <div class="number">{{ vo.phone }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-coordinator" *ngIf="facultyCoordinators.length > 0">
+                <h1 class="desc_heading">Faculty Coordinator</h1>
+                <div class="cards">
+                    <div class="card" *ngFor="let fo of facultyCoordinators">
+                        <div class="img" *ngIf="fo.img">
+                            <img [src]="fo.img" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">{{ fo.name }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

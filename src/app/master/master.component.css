@@ -132,15 +132,15 @@
 
 nav {
     position: relative;
-    min-height: 73px !important;
-    height: 73px !important;
+    min-height: 80px !important;
+    height: 80px !important;
     display: flex;
     align-items: center;
-    background-color: #161616;
+    background-color: #161616c9;
 }
 
 .Logo {
-    width: 200px;
+    width: 180px;
     padding: 10px;
     margin-left: 15px;
 }
@@ -718,7 +718,8 @@ footer {
     align-items: center;
     /* background-color: rgba(6, 12, 34, 0.98); */
     background-color: #161515;
-    height: 50px;
+    height: 50px !important;
+    min-height: 50px !important;
 }
 
 .footerContent {
@@ -1307,4 +1308,82 @@ footer {
     transition-property: transform, opacity;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
+}
+
+
+
+.section-heading {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 64px;
+    color: #10996d;
+    margin: 0 0 70px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.profile {
+    position: relative;
+    transition: all 0.3s;
+    margin-left: -20px;
+}
+
+.container>*:not(.tab-wrap) {
+    padding: 0;
+}
+
+.profile:hover {
+    transform: translateY(25px);
+}
+
+.profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #ffffffa1;
+    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+    cursor: pointer;
+    /* margin-left: -20px; */
+}
+
+/* .profile:not(:first-child) img {
+    margin-left: -20px;
+} */
+
+.profile .name {
+    position: absolute;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding: 15px 30px;
+    border-radius: 100px;
+    bottom: -60px;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50px);
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.profile .name::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.profile img:hover+.name {
+    opacity: 1;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
 }
