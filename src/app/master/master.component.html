@@ -43,7 +43,7 @@
     </div>
 
     <!-- SPONSOR SECTION -->
-    <!-- <section class="slider-container titleMrg">
+    <section class="slider-container titleMrg">
         <div class="mainTitle">
             <h1 class="title">Sponsor</h1>
         </div>
@@ -51,14 +51,12 @@
             <div class="slide-track">
 
                 <div class="img-container">
-                    <img class="img1 sponserImg" src="../../assets/Sponsers/1.PNG" />
-                    <img class="img1 sponserImg" src="../../assets/Sponsers/2.jpg" />
-                    <img class="img1 sponserImg" src="../../assets/Sponsers/3.JPG" />
-                    <img class="img1 sponserImg" src="../../assets/Sponsers/4.jpg" />
-                    <img class="img1 sponserImg" src="../../assets/Sponsers/5.JPG" />
-                    <img class="img1 sponserImg" src="../../assets/Sponsers/6.JPG" />
-                    <img class="img1 sponserImg" src="../../assets/Sponsers/7.JPG" />
-                    <img class="img1 sponserImg" src="../../assets/Sponsers/8.JPG" />
+                    <img class="img1 sponserImg" src="../../assets/Sponsers/1.png" />
+                    <img class="img1 sponserImg" src="../../assets/Sponsers/2.png" />
+                    <img class="img1 sponserImg" src="../../assets/Sponsers/3.png" />
+                    <img class="img1 sponserImg" src="../../assets/Sponsers/4.png" />
+                    <img class="img1 sponserImg" src="../../assets/Sponsers/5.png" />
+                    <img class="img1 sponserImg" src="../../assets/Sponsers/6.png" />
 
                     <div class="arrows">
                         <svg class="prev" viewBox="0 0 256 512" width="100" title="angle-left">
@@ -73,7 +71,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <div class="event-container titleMrg" id="eventSection">
         <div class="mainTitle">
@@ -160,7 +158,7 @@
         </div>
     </div> -->
 
-    <!-- <div class="developersContainer titleMrg" id="developersSection">
+    <div class="developersContainer titleMrg" id="developersSection">
         <div class="mainTitle">
             <h1 class="title">Web Developers</h1>
         </div>
@@ -191,37 +189,11 @@
             <h1 class="title">Design Team</h1>
         </div>
         <div class="container">
-            <div class="profile">
-                <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                    alt="" /><span class="name">Kalyan</span>
-            </div>
-            <div class="profile">
-                <img src="https://images.unsplash.com/photo-1530577197743-7adf14294584?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80"
-                    alt="" /><span class="name">Suchitra Tiwari</span>
-            </div>
-
-            <div class="profile">
-                <img src="https://images.unsplash.com/photo-1598641795816-a84ac9eac40c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80"
-                    alt="" /><span class="name">Sajid Ghani</span>
-            </div>
-            <div class="profile">
-                <img src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                    alt="" /><span class="name">Dhriti</span>
-            </div>
-            <div class="profile">
-                <img src="https://images.unsplash.com/photo-1618018352910-72bdafdc82a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                    alt="" /><span class="name">Milind</span>
-            </div>
-            <div class="profile">
-                <img src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=801&q=80"
-                    alt="" /><span class="name">Srikant Tiwari</span>
-            </div>
-            <div class="profile">
-                <img src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
-                    alt="" /><span class="name">Major Sameer</span>
+            <div class="profile" *ngFor="let team of posterMakingTeam">
+                <img [src]="team.img" alt="" /><span class="name">{{ team.name }}</span>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- <div class="spContainer titleMrg">
         <div class="mainTitle">

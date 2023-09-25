@@ -30,6 +30,16 @@ export class MasterComponent implements OnInit {
     { id: 13, img: '../../assets/Events/13.jpg' },
   ]
 
+  posterMakingTeam: any[] = [
+    { id: 1, img: '../../assets/Postermaking/nehul.png', name: "Nehul Vasava" },
+    { id: 2, img: '../../assets/Postermaking/Drashti_Gor.png', name: "Drashti Gor" },
+    { id: 3, img: '../../assets/Postermaking/Shruti_Savani.png', name: "Shruti Savani" },
+    { id: 4, img: '../../assets/Postermaking/Abdul_Kadir.png', name: "Abdul Kadir" },
+    { id: 5, img: '../../assets/Postermaking/Kirtan_Kothwala.png', name: "Kirtan Kothwala" },
+    { id: 6, img: '../../assets/Postermaking/Jiya_Patel.png', name: "Jiya Patel" },
+    { id: 7, img: '../../assets/Postermaking/Prerna_Gattani.png', name: "Prerna_Gattani" },
+  ]
+
   mainCoordinators = [
     { id: 1, img: '../../assets/MainCoordinators/keyur.jpeg', name: 'Keyur Kakadiya' },
     { id: 2, img: "../../assets/MainCoordinators/1.jpeg", name: 'Vrushant Bhanderi' },
@@ -38,6 +48,7 @@ export class MasterComponent implements OnInit {
     { id: 5, img: "../../assets/MainCoordinators/shailija.png", name: 'Shailja Patel' },
     { id: 6, img: "../../assets/MainCoordinators/shivani.jpeg", name: 'Shivani Sopariwala' },
   ];
+
   slides = [
     { id: 1, img: '../../assets/FacultyCoordinators/vandanaJoshi.jpeg', name: 'Prof. Vandana joshi' },
     { id: 2, img: '../../assets/FacultyCoordinators/nitiyaKomalan.jpeg', name: 'Ms. Nitya komalan' },

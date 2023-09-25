@@ -1371,7 +1371,7 @@ footer {
     font-family: "Bebas Neue", cursive;
     padding: 15px 30px;
     border-radius: 100px;
-    bottom: -60px;
+    bottom: -40px;
     left: 50%;
     white-space: nowrap;
     transform: translate(-50%, -50px);
