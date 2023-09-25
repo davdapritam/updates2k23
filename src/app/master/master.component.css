@@ -1359,6 +1359,8 @@ footer {
     border: 5px solid #ffffffa1;
     filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
     cursor: pointer;
+    height: 150px;
+    width: 150px;
 }
 
 /* .profile:not(:first-child) img {

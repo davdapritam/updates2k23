@@ -79,25 +79,22 @@
   }
   // setInterval(layout(), 1000);
 
-  if (next) {
-    next.addEventListener("click", () => {
-      index++;
-      if (index > imgs.length - 1) {
-        index = imgs.length - 1;
-      }
-      layout();
-    });
-  }
 
-  if (prev) {
-    prev.addEventListener("click", () => {
-      index--;
-      if (index < 0) {
-        index = 0;
-      }
-      layout();
-    });
+  function onClickNext() {
+  index++;
+  if (index > imgs.length - 1) {
+    index = imgs.length - 1;
   }
+  layout();
+}
+
+function onClickPrev() {
+  index--;
+  if (index < 0) {
+    index = 0;
+  }
+  layout();
+}
 
   const autoSlideInterval = 3000;
   let autoSlideTimer;
@@ -117,8 +114,8 @@
   }
 
   startAutoSlide();
-
 </script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
