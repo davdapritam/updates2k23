@@ -475,12 +475,12 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Prit Savani",
-          img: '',
+          img: '../../assets/EventCoordinators/whomi/Prit_Savani.png',
           phone: "9979922921"
         },
         {
           name: "Dhruvina Ghodadara",
-          img: '',
+          img: '../../assets/EventCoordinators/whomi/Dhruvina_Ghodadara.png',
           phone: "8238841335"
         },
         {
@@ -661,7 +661,7 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Riddhika Cheruku",
-          img: '',
+          img: '../../assets/EventCoordinators/SkillSynth/Riddhika_Cheruku.png',
           phone: "9327604924"
         },
         {
@@ -678,12 +678,12 @@ export class RulesComponent implements OnInit {
       volunteers: [
         {
           name: "Rohan Prajapati",
-          img: '',
+          img: '../../assets/EventCoordinators/SkillSynth/Rohan_Prajapati.png',
           phone: "9979624402"
         },
         {
           name: "Aryan Prajapati",
-          img: '',
+          img: '../../assets/EventCoordinators/SkillSynth/Aryan_Prajapati.png',
           phone: "7574969717"
         }
       ],
@@ -781,12 +781,12 @@ export class RulesComponent implements OnInit {
         },
         {
           name: "Kenil Vekariya",
-          img: '',
+          img: '../../assets/EventCoordinators/StockX/Kenil.png',
           phone: "9723354048"
         },
         {
           name: "Vasu Dankhara",
-          img: '',
+          img: '../../assets/EventCoordinators/StockX/Vasu.png',
           phone: "9870077031"
         }
       ],
@@ -803,7 +803,7 @@ export class RulesComponent implements OnInit {
         },
         {
           name: "Nevi Vaghani",
-          img: '',
+          img: '../../assets/EventCoordinators/StockX/Nevi.png',
           phone: "8160648663"
         }
       ],
@@ -1031,7 +1031,7 @@ export class RulesComponent implements OnInit {
         },
         {
           name: "Krisha Patel",
-          img: '',
+          img: '../../assets/EventCoordinators/HackFix/Krisha.png',
           phone: "9925551929"
         },
         {
