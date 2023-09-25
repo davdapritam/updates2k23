@@ -191,7 +191,7 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Parth Kunjadiya",
-          img: '',
+          img: '../../assets/EventCoordinators/BrainX/parth.jpg',
           phone: "9510554054"
         },
         {
@@ -391,7 +391,7 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Kushal Jasani",
-          img: '',
+          img: '../../assets/EventCoordinators/TwoFold/Kushal_jasani.jpg',
           phone: "9724998559"
         },
         {
@@ -504,7 +504,7 @@ export class RulesComponent implements OnInit {
     {
       id: 7,
       eventImg: "../../assets/Fonts/cineverse.png",
-      eventBackImg: '../../assets/bg/brainx.png',
+      eventBackImg: '../../assets/bg/cineverse.jpg',
       event_tagLine: "The Ultimate Cinematic Fusion",
       eventDescription: {
         no_of_rounds: 2,
