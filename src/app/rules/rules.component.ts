@@ -19,10 +19,12 @@ export class RulesComponent implements OnInit {
   studentCoordinators: any[] = [];
   facultyCoordinators: any[] = [];
   volunteers: any[] = [];
+  eventLink: string = "";
 
   rulesAndDescriptionArray: any[] = [
     {
       id: 1,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSevsr8-fFqYhAnWOzurrf-re8lbWzshT63NSRoniwgpZuKK1g/viewform',
       eventImg: "../../assets/Fonts/webwave.png",
       eventBackImg: '../../assets/bg/webwave.png',
       event_tagLine: "The HTML CSS Fusion",
@@ -125,6 +127,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 2,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe4mJIID3OcS0BUwY6DOUOLZpczHzQUloXorAXSM1xq0IYU6Q/viewform',
       eventImg: "../../assets/Fonts/brainx.png",
       eventBackImg: '../../assets/bg/brainx.png',
       event_tagLine: "Unleash Your Solo Genius",
@@ -230,6 +233,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 3,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSf7GBJPn-sliggOSXy9SxlcNQOv5bIO-dpXLRp1oKc6Wwwutg/viewform',
       eventImg: "../../assets/Fonts/avishkar.png",
       eventBackImg: '../../assets/bg/avishkar.png',
       event_tagLine: "Scet Tank",
@@ -265,6 +269,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 4,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdiXC1jCSqvQB3-3SBUA8Rz8wQsbzmIZA804ft0y1L_k8tyLw/viewform',
       eventImg: "../../assets/Fonts/enigma.png",
       eventBackImg: '../../assets/bg/enigma.jpg',
       event_tagLine: "Unlock the Mysteries",
@@ -337,6 +342,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 5,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdX7wZyHO6ICLH182zvyf0mNmIS0_Xb0omGX-43WX0w5GHIGw/viewform',
       eventImg: "../../assets/Fonts/twofold.png",
       eventBackImg: '../../assets/bg/twofold.jpg',
       event_tagLine: "Unfold the secret",
@@ -435,6 +441,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 6,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCoIobM0htqNGz7KU0kTvp4cgPuuYkUymspN-HXJ7BtAFXiA/viewform',
       eventImg: "../../assets/Fonts/whomi.png",
       eventBackImg: '../../assets/bg/whomi.jpg',
       event_tagLine: "Catch Clue And Find Person",
@@ -503,6 +510,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 7,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfz3OlCF7sl_dFr3lWfH1sgMxpa1n8Vi3hJWpq6P6ehWs3sJw/viewform',
       eventImg: "../../assets/Fonts/cineverse.png",
       eventBackImg: '../../assets/bg/cineverse.jpg',
       event_tagLine: "The Ultimate Cinematic Fusion",
@@ -592,6 +600,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 8,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfiWLw72kFZ4AGQ0I9gFqX6dSSve0iuznbIxqddyRAp4TySyg/viewform',
       eventImg: "../../assets/Fonts/skillsynth.png",
       eventBackImg: '../../assets/bg/skillsynth.png',
       event_tagLine: "Where Skills Synthesize into Success.",
@@ -691,6 +700,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 9,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfG85PkDD9MlY4YeONS5dFnvQC9PrRHAG7ljp2hm9IWuEMtMg/viewform',
       eventImg: "../../assets/Fonts/stockx.png",
       eventBackImg: '../../assets/bg/stockx.png',
       event_tagLine: "The SCET Stock Exchange",
@@ -801,6 +811,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 10,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfKPthwKnJ90KRP5WEOUetNJcsKR4Id9B7YOu0xa0m9cGPB1g/viewform',
       eventImg: "../../assets/Fonts/abhivyakti.png",
       eventBackImg: '../../assets/bg/abhivyakti.png',
       event_tagLine: "Intellectual Gladiators Battle",
@@ -875,6 +886,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 11,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfjWTtIg9ehtIVS-5-qtvAdAAKBNO3QDLrJ3PrDcwOC7lcgdw/viewform',
       eventImg: "../../assets/Fonts/datatrace.png",
       eventBackImg: '../../assets/bg/datatrace.png',
       event_tagLine: "Unlock the Truth",
@@ -962,6 +974,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 12,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd3Z3W0iZmvbN5PeEj6y2zZlla4sDnxd4k7yQK_Hyo_Jb6xKw/viewform',
       eventImg: "../../assets/Fonts/hackfix.png",
       eventBackImg: '../../assets/bg/hackfix.png',
       event_tagLine: "Fix The Glitch",
@@ -1052,6 +1065,7 @@ export class RulesComponent implements OnInit {
     },
     {
       id: 13,
+      eventLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeyOuEhYlzL17eU3MK5gsY4S2pePfXgL_inuAA4_O7rWcQHiw/viewform',
       eventImg: "../../assets/Fonts/codify.png",
       eventBackImg: '../../assets/bg/hackfix.png',
       event_tagLine: "Codify: Where Creativity Meets Code",
@@ -1172,6 +1186,7 @@ export class RulesComponent implements OnInit {
           this.studentCoordinators = result[0].coordinators
           this.facultyCoordinators = result[0].faculty_coordinators
           this.volunteers = result[0].volunteers
+          this.eventLink = result[0].eventLink
         }
       }
     })
@@ -1182,6 +1197,10 @@ export class RulesComponent implements OnInit {
       top: 0,
       behavior: 'smooth'
     })
+  }
+
+  goToLink(url: string) {
+    window.open(url, "_blank")
   }
 
 }

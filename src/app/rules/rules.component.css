@@ -134,6 +134,26 @@ ul li {
     color: white;
 }
 
+.registerBtn {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.register-btn {
+    width: 200px;
+    color: white;
+    border: 1px solid white;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.register-btn:hover {
+    color: white;
+    border: 1px solid white;
+}
+
 @media only screen and (max-width: 1024px) {
 
     .desc_heading,
@@ -171,7 +191,19 @@ ul li {
     .card .details .number {
         font-size: 16px;
     }
+
+    .register-btn {
+        width: 180px;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .register-btn:hover {
+        color: white;
+    }
 }
+
+
 
 @media only screen and (max-width: 850px) {
 
@@ -218,6 +250,16 @@ ul li {
     .card .details .name,
     .card .details .number {
         font-size: 15px;
+    }
+
+    .register-btn {
+        width: 170px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .register-btn:hover {
+        color: white;
     }
 }
 
