@@ -75,6 +75,11 @@
     padding: 20px;
 }
 
+.mrgTop40 {
+    margin-top: 40px;
+    padding: 20px;
+}
+
 .mainTitle {
     width: 100%;
     display: flex;
@@ -276,6 +281,18 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.mainCoordinatorCarousel {
+    width: 100%;
+}
+
+.mainCoodinator {
+    width: 100% !important;
+}
+
+.displayshowOn650 {
+    display: none;
 }
 
 /* COUROUSEL END */
@@ -785,6 +802,14 @@ footer {
     display: none;
 }
 
+.displayNoneOn650Developers {
+    display: flex;
+}
+
+.displayShowOn650Developers {
+    display: none;
+}
+
 .displayFlex {
     display: flex;
 }
@@ -1075,12 +1100,12 @@ footer {
 
     .developer {
         min-width: 26%;
-        width: 28%;
+        width: 40%;
     }
 
     .developerImg {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
     }
 
     .faculty {
@@ -1089,8 +1114,8 @@ footer {
     }
 
     .devName {
-        font-size: 15px;
-        margin-top: 15px;
+        font-size: 17px;
+        margin-top: 20px;
     }
 
     .tab-wrap {
@@ -1112,6 +1137,26 @@ footer {
 
     .titleMrg {
         padding: 10px;
+    }
+
+    .displayNoneOn650 {
+        display: none !important;
+    }
+
+    .displayshowOn650 {
+        display: block;
+    }
+
+    .displayShowOn650Developers {
+        display: flex;
+    }
+
+    .displayNoneOn650Developers {
+        display: none !important;
+    }
+
+    .displayShowOn650Developers {
+        display: flex;
     }
 }
 

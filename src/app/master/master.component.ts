@@ -41,12 +41,12 @@ export class MasterComponent implements OnInit {
   ]
 
   mainCoordinators = [
-    { id: 1, img: '../../assets/MainCoordinators/keyur.jpeg', name: 'Keyur Kakadiya' },
-    { id: 2, img: "../../assets/MainCoordinators/1.jpeg", name: 'Vrushant Bhanderi' },
-    { id: 3, img: "../../assets/MainCoordinators/yashPansuriya.jpeg", name: 'Yash Pansheriya' },
-    { id: 4, img: "../../assets/MainCoordinators/2.jpeg", name: 'Jash Shah' },
-    { id: 5, img: "../../assets/MainCoordinators/shailija.png", name: 'Shailja Patel' },
-    { id: 6, img: "../../assets/MainCoordinators/shivani.jpeg", name: 'Shivani Sopariwala' },
+    { id: 1, img: '../../assets/MainCoordinators/akshay.jpeg', name: 'Akshay Golakiya' },
+    { id: 2, img: "../../assets/MainCoordinators/smit.jpg", name: 'Smit Pansuriya' },
+    { id: 3, img: "../../assets/MainCoordinators/ayush.jpeg", name: 'Ayush Kayasth' },
+    { id: 4, img: "../../assets/MainCoordinators/ansh.jpg", name: 'Ansh Mangukiya' },
+    { id: 5, img: "../../assets/MainCoordinators/priya.jpeg", name: 'Priya Sisodiya' },
+    { id: 6, img: "../../assets/MainCoordinators/krish.jpg", name: 'Krish Padmani' },
   ];
 
   slides = [
