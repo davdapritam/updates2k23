@@ -1191,8 +1191,8 @@ footer {
   }
 
   .container>*:not(.tab-wrap) {
-    width: 80px !important;
-    height: 80px !important;
+    width: 90px !important;
+    height: 90px !important;
   }
 }
 
