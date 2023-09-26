@@ -62,6 +62,49 @@ export class MasterComponent implements OnInit {
     },
   ];
 
+  marketingTeam = [
+    { id: 1, img: '../../assets/Marketing/Aarohi_Desai.png', name: 'Aarohi Desai' },
+    {
+      id: 2,
+      img: '../../assets/Marketing/Aryan Mehta.png',
+      name: 'Aryan Mehta',
+    },
+    {
+      id: 3,
+      img: '../../assets/Marketing/Brahmi_Shah.png',
+      name: 'Brahmi Shah',
+    },
+    {
+      id: 4,
+      img: '../../assets/Marketing/Keshvi_Choksi.png',
+      name: 'Keshvi Choksi',
+    },
+    {
+      id: 5,
+      img: '../../assets/Marketing/Ria_Kangariwala.png',
+      name: 'Ria Kangariwala',
+    },
+    {
+      id: 6,
+      img: '../../assets/Marketing/Riddhika_Cheruku.png',
+      name: 'Riddhika Cheruku',
+    },
+    {
+      id: 7,
+      img: '../../assets/Marketing/Vansh_Golakiya.png',
+      name: 'Vansh Golakiya',
+    },
+    {
+      id: 8,
+      img: '../../assets/Marketing/Varoon_Soneji.png',
+      name: 'Varoon Soneji',
+    },
+    {
+      id: 9,
+      img: '../../assets/Marketing/Vishwaa_Shah.png',
+      name: 'Vishwa Shah',
+    },
+  ]
   mainCoordinators = [
     {
       id: 1,
