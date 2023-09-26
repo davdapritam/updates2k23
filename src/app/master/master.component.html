@@ -1,13 +1,6 @@
 <div class="mainComponent" id="hiddencomponent" (click)="playVideo()">
   <div class="video-background">
-    <video
-      #myVideo
-      [autoplay]="true"
-      [loop]="true"
-      [muted]="true"
-      id="video1"
-      class="videoStyle video-bg"
-    >
+    <video #myVideo [autoplay]="true" [loop]="true" [muted]="true" id="video1" class="videoStyle video-bg">
       <source src="../../assets/v1.mp4" type="video/mp4" />
     </video>
   </div>
@@ -26,26 +19,15 @@
     </div>
     <div class="toggleDisplay">
       <div class="dropdown">
-        <button
-          class="btn btn-secondary"
-          style="background-color: transparent; border: none; box-shadow: none"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
+        <button class="btn btn-secondary" style="background-color: transparent; border: none; box-shadow: none"
+          type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <div
-          class="dropdown-menu dropdown-menu-right"
-          style="
+        <div class="dropdown-menu dropdown-menu-right" style="
             background-color: #161616;
             border-color: #161616;
             min-height: 300px;
-          "
-          aria-labelledby="dropdownMenuButton"
-        >
+          " aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="#">Home</a>
           <a class="dropdown-item" href="#eventSection">Events</a>
           <a class="dropdown-item" href="#timeTable">Schedule</a>
@@ -56,13 +38,7 @@
     </div>
   </nav>
   <div class="promo-background">
-    <video
-      #myVideo2
-      [autoplay]="true"
-      [muted]="true"
-      id="video2"
-      class="promoStyle"
-    >
+    <video #myVideo2 [autoplay]="true" [muted]="true" id="video2" class="promoStyle">
       <source src="../../assets/promo.mp4" type="video/mp4" />
     </video>
   </div>
@@ -83,27 +59,13 @@
           <img class="img1 sponserImg" src="../../assets/Sponsers/6.png" />
 
           <div class="arrows">
-            <svg
-              class="prev"
-              onclick="onClickPrev()"
-              viewBox="0 0 256 512"
-              width="100"
-              title="angle-left"
-            >
+            <svg class="prev" onclick="onClickPrev()" viewBox="0 0 256 512" width="100" title="angle-left">
               <path
-                d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
-              />
+                d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
             </svg>
-            <svg
-              class="next"
-              onclick="onClickNext()"
-              viewBox="0 0 256 512"
-              width="100"
-              title="angle-right"
-            >
+            <svg class="next" onclick="onClickNext()" viewBox="0 0 256 512" width="100" title="angle-right">
               <path
-                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
-              />
+                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
             </svg>
           </div>
         </div>
@@ -118,12 +80,7 @@
     <div class="event-card-container">
       <div class="event-card" *ngFor="let event of posters" id="eventCard">
         <div class="event-img">
-          <img
-            [src]="event.img"
-            (click)="navigateTo(event.id)"
-            id="codeOne"
-            alt=""
-          />
+          <img [src]="event.img" (click)="navigateTo(event.id)" id="codeOne" alt="" />
         </div>
       </div>
     </div>
@@ -170,11 +127,8 @@
     <div class="mainTitle">
       <h1 class="title">Main Coordinators</h1>
     </div>
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide mainCoordinatorCarousel displayNoneOn650"
-      data-bs-ride="carousel"
-    >
+    <div id="carouselExampleAutoplaying" class="carousel slide mainCoordinatorCarousel displayNoneOn650"
+      data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="developers mainCoodinator">
@@ -218,35 +172,24 @@
               </div>
               <p class="devName">Priya Sisodiya</p>
             </div>
-           
+
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
-    <div
-      id="carouselExampleAutoplaying1"
-      class="carousel slide mainCoordinatorCarousel displayshowOn650"
-      data-bs-ride="carousel"
-    >
+    <div id="carouselExampleAutoplaying1" class="carousel slide mainCoordinatorCarousel displayshowOn650"
+      data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="developers mainCoodinator">
@@ -309,21 +252,13 @@
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying1"
-        data-bs-slide="prev"
-      >
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying1"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -335,25 +270,19 @@
       <h1 class="title">Faculty Coordinators</h1>
     </div>
     <div class="developers displayNoneOn650Developers">
-      <div
-        class="developer"
-      >
+      <div class="developer">
         <div class="developerImg">
           <img src="../../assets/FacultyCoordinators/Bhumika Bhatt.png" alt="" />
         </div>
         <p class="devName">Bhumika Bhatt</p>
       </div>
-      <div
-        class="developer"
-      >
+      <div class="developer">
         <div class="developerImg">
           <img src="../../assets/FacultyCoordinators/MsPracheePatel.jpg" alt="" />
         </div>
         <p class="devName">Prachee Patel</p>
       </div>
-      <div
-        class="developer"
-      >
+      <div class="developer">
         <div class="developerImg">
           <img src="../../assets/FacultyCoordinators/Nancy Sukhadia.jpg" alt="" />
         </div>
@@ -361,17 +290,12 @@
       </div>
     </div>
 
-    <div
-      id="carouselExampleAutoplaying4"
-      class="carousel slide mainCoordinatorCarousel displayShowOn650Developers"
-      data-bs-ride="carousel"
-    >
+    <div id="carouselExampleAutoplaying4" class="carousel slide mainCoordinatorCarousel displayShowOn650Developers"
+      data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="developers">
-            <div
-              class="developer"
-            >
+            <div class="developer">
               <div class="developerImg">
                 <img src="../../assets/FacultyCoordinators/Bhumika Bhatt.png" alt="" />
               </div>
@@ -381,9 +305,7 @@
         </div>
         <div class="carousel-item">
           <div class="developers mainCoodinator">
-            <div
-              class="developer"
-            >
+            <div class="developer">
               <div class="developerImg">
                 <img src="../../assets/FacultyCoordinators/MsPracheePatel.jpg" alt="" />
               </div>
@@ -393,9 +315,7 @@
         </div>
         <div class="carousel-item">
           <div class="developers mainCoodinator">
-            <div
-              class="developer"
-            >
+            <div class="developer">
               <div class="developerImg">
                 <img src="../../assets/FacultyCoordinators/Nancy Sukhadia.jpg" alt="" />
               </div>
@@ -404,54 +324,37 @@
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying4"
-        data-bs-slide="prev"
-      >
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying4"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying4"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying4"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
   </div>
-  
+
   <div class="developersContainer titleMrg" id="developersSection">
     <div class="mainTitle">
       <h1 class="title">Web Developers</h1>
     </div>
     <div class="developers displayNoneOn650Developers">
-      <div
-        class="developer"
-        (click)="goToLink('https://github.com/davdapritam')"
-      >
+      <div class="developer" (click)="goToLink('https://github.com/davdapritam')">
         <div class="developerImg">
           <img src="../../assets/webTeam/pritamdavda.jpg" alt="" />
         </div>
         <p class="devName">Davda Pritam</p>
       </div>
-      <div
-        class="developer"
-        (click)="goToLink('https://github.com/jigneshbhai')"
-      >
+      <div class="developer" (click)="goToLink('https://github.com/jigneshbhai')">
         <div class="developerImg">
           <img src="../../assets/webTeam/jignesh.jpg" alt="" />
         </div>
         <p class="devName">Jighnesh Baldaniya</p>
       </div>
-      <div
-        class="developer"
-        (click)="goToLink('https://github.com/abhiradadiya07')"
-      >
+      <div class="developer" (click)="goToLink('https://github.com/abhiradadiya07')">
         <div class="developerImg">
           <img src="../../assets/webTeam/abhishek.jpg" alt="" />
         </div>
@@ -459,18 +362,12 @@
       </div>
     </div>
 
-    <div
-      id="carouselExampleAutoplaying2"
-      class="carousel slide mainCoordinatorCarousel displayShowOn650Developers"
-      data-bs-ride="carousel"
-    >
+    <div id="carouselExampleAutoplaying2" class="carousel slide mainCoordinatorCarousel displayShowOn650Developers"
+      data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="developers">
-            <div
-              class="developer"
-              (click)="goToLink('https://github.com/davdapritam')"
-            >
+            <div class="developer" (click)="goToLink('https://github.com/davdapritam')">
               <div class="developerImg">
                 <img src="../../assets/webTeam/pritamdavda.jpg" alt="" />
               </div>
@@ -480,10 +377,7 @@
         </div>
         <div class="carousel-item">
           <div class="developers mainCoodinator">
-            <div
-              class="developer"
-              (click)="goToLink('https://github.com/jigneshbhai')"
-            >
+            <div class="developer" (click)="goToLink('https://github.com/jigneshbhai')">
               <div class="developerImg">
                 <img src="../../assets/webTeam/jignesh.jpg" alt="" />
               </div>
@@ -493,10 +387,7 @@
         </div>
         <div class="carousel-item">
           <div class="developers mainCoodinator">
-            <div
-              class="developer"
-              (click)="goToLink('https://github.com/abhiradadiya07')"
-            >
+            <div class="developer" (click)="goToLink('https://github.com/abhiradadiya07')">
               <div class="developerImg">
                 <img src="../../assets/webTeam/abhishek.jpg" alt="" />
               </div>
@@ -505,21 +396,13 @@
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying2"
-        data-bs-slide="prev"
-      >
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying2"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -535,81 +418,51 @@
         <div class="profile" *ngFor="let team of posterMakingTeam">
           <img [src]="team.img" alt="" /><span class="name">{{
             team.name
-          }}</span>
+            }}</span>
         </div>
       </div>
-      <div
-        id="carouselExampleAutoplaying3"
-        class="carousel slide mainCoordinatorCarousel displayShowOn650Developers"
-        data-bs-ride="carousel"
-      >
+      <div id="carouselExampleAutoplaying3" class="carousel slide mainCoordinatorCarousel displayShowOn650Developers"
+        data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
-              <div class="profile posterProfile">
-                <img src="../../assets/Postermaking/nehul.png" alt="" /><span
-                  class="name"
-                  >Nehul Vasava</span
-                >
+              <div class="profile posterProfile marginLeft0">
+                <img src="../../assets/Postermaking/nehul.png" alt="" /><span class="name">Nehul Vasava</span>
               </div>
               <div class="profile posterProfile">
-                <img
-                  src="../../assets/Postermaking/Drashti_Gor.png"
-                  alt=""
-                /><span class="name">Drashti Gor</span>
+                <img src="../../assets/Postermaking/Drashti_Gor.png" alt="" /><span class="name">Drashti Gor</span>
               </div>
               <div class="profile posterProfile">
-                <img
-                  src="../../assets/Postermaking/Shruti_Savani.png"
-                  alt=""
-                /><span class="name">Shruti Savani</span>
+                <img src="../../assets/Postermaking/Shruti_Savani.png" alt="" /><span class="name">Shruti Savani</span>
               </div>
               <div class="profile posterProfile">
-                <img
-                  src="../../assets/Postermaking/Abdul_Kadir.png"
-                  alt=""
-                /><span class="name">Abdul Kadir</span>
+                <img src="../../assets/Postermaking/Abdul_Kadir.png" alt="" /><span class="name">Abdul Kadir</span>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="container">
               <div class="profile posterProfile">
-                <img
-                  src="../../assets/Postermaking/Kirtan_Kothwala.png"
-                  alt=""
-                /><span class="name">Kirtan Kothwala</span>
+                <img src="../../assets/Postermaking/Kirtan_Kothwala.png" alt="" /><span class="name">Kirtan
+                  Kothwala</span>
               </div>
               <div class="profile posterProfile">
-                <img
-                  src="../../assets/Postermaking/Jiya_Patel.png"
-                  alt=""
-                /><span class="name">Jiya Patel</span>
+                <img src="../../assets/Postermaking/Jiya_Patel.png" alt="" /><span class="name">Jiya Patel</span>
               </div>
               <div class="profile posterProfile">
-                <img
-                  src="../../assets/Postermaking/Prerna_Gattani.png"
-                  alt=""
-                /><span class="name">Prerna Gattani</span>
+                <img src="../../assets/Postermaking/Prerna_Gattani.png" alt="" /><span class="name">Prerna
+                  Gattani</span>
               </div>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying3"
-          data-bs-slide="prev"
-        >
+        <button class="carousel-control-prev mrgTop90" type="button" data-bs-target="#carouselExampleAutoplaying3"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying3"
-          data-bs-slide="next"
-        >
+        <button class="carousel-control-next mrgTop90" type="button" data-bs-target="#carouselExampleAutoplaying3"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
