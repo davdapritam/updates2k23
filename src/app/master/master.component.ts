@@ -29,34 +29,39 @@ export class MasterComponent implements OnInit {
   ];
 
   posterMakingTeam: any[] = [
-    { id: 1, img: '../../assets/Postermaking/nehul.png', name: 'Nehul Vasava' },
     {
-      id: 2,
+      id: 1,
+      img: '../../assets/Postermaking/Shruti_Savani.png',
+      name: 'Shruti Savani',
+    },
+    { id: 2, img: '../../assets/Postermaking/nehul.png', name: 'Nehul Vasava' },
+    {
+      id: 3,
       img: '../../assets/Postermaking/Drashti_Gor.png',
       name: 'Drashti Gor',
     },
     {
-      id: 3,
-      img: '../../assets/Postermaking/Shruti_Savani.png',
-      name: 'Shruti Savani',
+      id: 4,
+      img: '../../assets/Postermaking/aniket.jpeg',
+      name: 'Drashti Gor',
     },
     {
-      id: 4,
+      id: 5,
       img: '../../assets/Postermaking/Abdul_Kadir.png',
       name: 'Abdul Kadir',
     },
     {
-      id: 5,
+      id: 6,
       img: '../../assets/Postermaking/Kirtan_Kothwala.png',
       name: 'Kirtan Kothwala',
     },
     {
-      id: 6,
+      id: 7,
       img: '../../assets/Postermaking/Jiya_Patel.png',
       name: 'Jiya Patel',
     },
     {
-      id: 7,
+      id: 8,
       img: '../../assets/Postermaking/Prerna_Gattani.png',
       name: 'Prerna_Gattani',
     },
@@ -107,60 +112,60 @@ export class MasterComponent implements OnInit {
   ]
 
   decorationTeam = [
-    { id: 1, img: '../../assets/DecorationTeam/Diya_Prajapati.jpg', name: 'Diya Prajapati' },
     {
-      id: 2,
-      img: '../../assets/DecorationTeam/Drashti_Patel.png',
-      name: 'Drashti Patel',
-    },
-    {
-      id: 3,
-      img: '../../assets/DecorationTeam/Hasti_Patel.png',
-      name: 'Hasti Patel',
-    },
-    {
-      id: 4,
+      id: 1,
       img: '../../assets/DecorationTeam/Helly_Diyora.png',
       name: 'Helly Diyora',
     },
     {
+      id: 2,
+      img: '../../assets/DecorationTeam/Priyanshi_Kalsariya.png',
+      name: 'Priyanshi Kalsariya',
+    },
+    {
+      id: 3,
+      img: '../../assets/DecorationTeam/Krisha_Bhingradiya.png',
+      name: 'Krisha Bhingradiya',
+    },
+    { id: 4, img: '../../assets/DecorationTeam/Diya_Prajapati.jpg', name: 'Diya Prajapati' },
+    {
       id: 5,
+      img: '../../assets/DecorationTeam/Drashti_Patel.png',
+      name: 'Drashti Patel',
+    },
+    {
+      id: 6,
+      img: '../../assets/DecorationTeam/Hasti_Patel.png',
+      name: 'Hasti Patel',
+    },
+    {
+      id: 7,
       img: '../../assets/DecorationTeam/Heta_Patel.png',
       name: 'Heta Patel',
     },
     {
-      id: 6,
+      id: 8,
       img: '../../assets/DecorationTeam/Khushee_Maru.png',
       name: 'Khushee Maru',
     },
     {
-      id: 7,
+      id: 9,
       img: '../../assets/DecorationTeam/Khushi_Patel.png',
       name: 'Khushi Patel',
     },
     {
-      id: 8,
-      img: '../../assets/DecorationTeam/Krisha_Bhingradiya.png',
-      name: 'Krisha Bhingradiya',
-    },
-    {
-      id: 9,
+      id: 10,
       img: '../../assets/DecorationTeam/Pooja_Pandit.png',
       name: 'Pooja Pandit',
     }, {
-      id: 10,
+      id: 11,
       img: '../../assets/DecorationTeam/Prapti_Shroff.png',
       name: 'Prapti Shroff',
     },
     {
-      id: 11,
+      id: 12,
       img: '../../assets/DecorationTeam/Varsha_Sankar.png',
       name: 'Varsha Sankar.png',
-    },
-    {
-      id: 12,
-      img: '../../assets/DecorationTeam/Priyanshi_Kalsariya.png',
-      name: 'Priyanshi Kalsariya',
     },
   ]
 
@@ -215,7 +220,7 @@ export class MasterComponent implements OnInit {
     },
   ];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     // this.playVideo();

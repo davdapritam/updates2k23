@@ -1431,6 +1431,11 @@ footer {
   width: 150px;
 }
 
+.decorationTeamprofile img {
+  width: 130px !important;
+  height: 130px !important;
+}
+
 /* .profile:not(:first-child) img {
     margin-left: -20px;
 } */
@@ -1438,7 +1443,7 @@ footer {
 .profile .name {
   position: absolute;
   color: #fff;
-  font-family: "Bebas Neue", cursive;
+  /* font-family: "Bebas Neue", cursive; */
   padding: 15px 30px;
   border-radius: 100px;
   bottom: -62px;

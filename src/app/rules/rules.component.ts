@@ -1026,7 +1026,7 @@ export class RulesComponent implements OnInit {
       coordinators: [
         {
           name: "Dhrumilsinh Parmar",
-          img: '',
+          img: '../../assets/EventCoordinators/HackFix/dhrumil.jpg',
           phone: "9265995052"
         },
         {
